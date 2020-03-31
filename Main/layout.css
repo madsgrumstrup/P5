@@ -1,7 +1,15 @@
+body {
+  background-image: url(../images/gammelt-papir.png);
+}
+
+
+
 .header {
-  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
   background: #c31414;
   color: white;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
