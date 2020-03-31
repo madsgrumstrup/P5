@@ -1,0 +1,36 @@
+.header {
+  padding: 10px 16px;
+  background: #c31414;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #c31414;;
+   color: white;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
+   padding-bottom: 5px;
+}
+
+li {
+   display: inline-block;
+}
