@@ -19,7 +19,11 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
    position: fixed;
+   justify-content: center;
+   height: 100px;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -32,5 +36,8 @@
 }
 
 li {
-   display: inline-block;
+   display: flex;
+   align-items: center;
+   margin-left: 40px;
+   margin-right: 40px;
 }
