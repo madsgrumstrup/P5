@@ -1,13 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 body {
   background-image: url(../../images/gammelt-papir.png);
   background-repeat: no-repeat;
-  background-position: top; /* vil ikke fylde hele siden*/
+  background-position: center; /* vil ikke fylde hele siden*/
 }
 
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #c31414;
+  height: 100px;
   color: white;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -24,6 +32,16 @@ body {
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 102px;
+}
+
+.varebillede img {
+  width: 100%;
+}
+
+.læsmere {
+  font-size: 60px;
+  background-color: #c31414;
+  width: 200px;
 }
 
 .footer {
