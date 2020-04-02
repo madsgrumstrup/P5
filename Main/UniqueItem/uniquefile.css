@@ -71,8 +71,21 @@ h1 {
 }
 
 .hint img {
-  width: 250px;
+  width: 300px;
   height: auto;
+}
+
+.antalvare {
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #c31414;
+  padding: 10px;
+  margin-top: 100px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .footer {
