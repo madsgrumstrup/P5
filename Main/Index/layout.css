@@ -63,7 +63,7 @@ li {
 }
 
 .modal{
-  /*display: none;*/
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -81,4 +81,16 @@ li {
   padding: 20px;
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn{
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: #8c1419;
+  text-decoration: none;
+  cursor: pointer;
 }
