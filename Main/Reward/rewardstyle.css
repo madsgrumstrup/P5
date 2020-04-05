@@ -77,10 +77,21 @@ li img{
   font-size: 50px;
   padding: 0px;
   text-align: center;
+  border-radius: 25px;
+  border: 2px;
 }
 
 .button:hover{
   background: #8c1419;
+}
+
+.slutBtn{
+  text-align: center;
+  top: 50%;
+}
+
+#slutBtn {
+
 }
 
 .modal{
@@ -94,7 +105,6 @@ li img{
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   color: black;
-
 }
 
 .modal-content{
@@ -104,22 +114,28 @@ li img{
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name:modalopen;
   animation-duration: 1s;
+  border-radius: 25px;
+  border: 2px solid #c31414;
 }
 
 .modal-header h2, .modal-footer h3{
   margin: 0;
-  font-size: 60px;
+
 }
 
 .modal-header{
-  background: #c31414;
+background: #c31414;
 padding: 30px;
 color: white;
+border-radius: 20px 20px 0px 0px;
+border: 2px solid #c31414;
+margin: 0px;
 text-align: center;
+font-size: 50px;
 }
 
 .modal-body{
-  padding: 60px 70px;
+  padding: 30px 70px;
   text-align: center;
   font-size: 40px;
 }
@@ -138,6 +154,14 @@ text-align: center;
 .closeBtn:hover,.closeBtn:focus{
   color: #8c1419;
   text-decoration: none;
+}
+
+.pirat{
+  padding: 40px;
+}
+
+p {
+  padding: 15px;
 }
 
 @keyframes modalopen{
