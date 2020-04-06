@@ -12,10 +12,7 @@ closeBtn.addEventListener('click', closeModal);
 startBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
-// Function to open modal
-function openModal(){
-  modal.style.display = 'block';
-}
+
 
 // Function to close modal
 function closeModal(){
