@@ -41,6 +41,12 @@ h1 {
 
 }
 
+.velkommen {
+
+  font-family:'raleway' ;
+
+}
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -141,7 +147,7 @@ li img{
   text-align: center;
   font-size: 40px;
   color: #c31414;
-  font-family:'raleway' ;  
+  font-family:'raleway' ;
 }
 
 .modal-footer{
