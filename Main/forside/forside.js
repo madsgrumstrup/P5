@@ -17,7 +17,10 @@ function openModal(){
   modal.style.display = 'block';
 }
 
-
+// Function to close modal
+function closeModal(){
+  modal.style.display = 'none';
+}
 
 // Function to close modal if outside click
 function outsideClick(e){
