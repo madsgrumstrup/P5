@@ -8,7 +8,7 @@ var closeBtn = document.getElementsByClassName('closeBtn')[0];
 // Listen for open click
 slutBtn.addEventListener('click', openModal);
 // Listen for close click
-closeBtn.addEventListener('click', closeModal);
+startBtn.addEventListener('click', closeModal);
 // Listen for outside click
 window.addEventListener('click', outsideClick);
 
