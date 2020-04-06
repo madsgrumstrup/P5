@@ -1,4 +1,5 @@
 // Get modal element
+var modal = document.getElementById('simpleModal');
 
 // Get close modalbutton
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
