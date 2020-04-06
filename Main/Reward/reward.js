@@ -10,6 +10,7 @@ slutBtn.addEventListener('click', openModal);
 // Listen for close click
 closeBtn.addEventListener('click', closeModal);
 // Listen for outside click
+betalBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
 // Function to open modal
