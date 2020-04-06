@@ -131,21 +131,6 @@ li img{
   border: 2px solid #c31414;
 }
 
-.modal-header h2, .modal-footer h3{
-  margin: 0;
-
-}
-
-.modal-header{
-background: #ffffff;
-padding: 30px;
-
-border-radius: 20px 20px 0px 0px;
-border: 2px solid ;
-margin: 0px;
-text-align: center;
-font-size: 50px;
-}
 
 .modal-body{
   padding: 30px 70px;
