@@ -1,5 +1,10 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
-  background-image: url(../images/gammelt-papir.png);
+  background-image: url(../../images/gammelt-papir.png);
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 1.6;
@@ -7,12 +12,18 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background: #c31414;
   color: white;
+  height: 200px;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -31,12 +42,11 @@ body {
   display: flex;
   flex-direction: row;
    position: fixed;
-   justify-content: center;
-   height: 100px;
+   height: 200px;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #c31414;;
+   background-color: #c31414;
    color: white;
    text-align: center;
    font-family: 'Open Sans', sans-serif;
@@ -47,8 +57,13 @@ body {
 li {
    display: flex;
    align-items: center;
-   margin-left: 40px;
-   margin-right: 40px;
+   justify-content: center;
+   width: 100%;
+}
+
+li img{
+  height: auto;
+  width: 100px;
 }
 
 .button{
@@ -56,10 +71,27 @@ li {
   padding: 1em 2em;
   color: #fff;
   border:0;
+  cursor: pointer;
+  height: 100px;
+  width: 200px;
+  font-size: 50px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px;
 }
 
 .button:hover{
   background: #8c1419;
+}
+
+.slutBtn{
+  text-align: center;
+  top: 50%;
+}
+
+#slutBtn {
+
 }
 
 .modal{
@@ -77,27 +109,35 @@ li {
 
 .modal-content{
   background-color: white;
-  margin: 20% auto;
-  width: 500px;
+  margin: 50% auto;
+  width: 600px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name:modalopen;
   animation-duration: 1s;
+  border-radius: 25px;
+  border: 2px solid #c31414;
 }
 
 .modal-header h2, .modal-footer h3{
   margin: 0;
+
 }
 
 .modal-header{
-  background: #c31414;
-padding: 15px;
+background: #c31414;
+padding: 30px;
 color: white;
+border-radius: 20px 20px 0px 0px;
+border: 2px solid #c31414;
+margin: 0px;
 text-align: center;
+font-size: 50px;
 }
 
 .modal-body{
-  padding: 10px 20px;
+  padding: 30px 70px;
   text-align: center;
+  font-size: 40px;
 }
 
 .modal-footer{
@@ -107,13 +147,21 @@ text-align: center;
 .closeBtn{
   color: white;
   float: right;
-  font-size: 30px;
+  cursor: pointer;
+  font-size: 60px;
 }
 
 .closeBtn:hover,.closeBtn:focus{
   color: #8c1419;
   text-decoration: none;
-  cursor: pointer;
+}
+
+.pirat{
+  padding: 40px;
+}
+
+p {
+  padding: 15px;
 }
 
 @keyframes modalopen{
