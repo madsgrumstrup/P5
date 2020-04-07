@@ -54,6 +54,11 @@ body {
   width: 100%;
 }
 
+.modal .hintpil {
+  height: 100px;
+  width: 100px;
+}
+
 #overlay {
   position: fixed;
   transition: 200ms ease-in-out;
