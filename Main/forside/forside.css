@@ -22,7 +22,7 @@ body {
 
 }
 
-h1 {
+h2 {
   font-size: 70px;
   font-family:'raleway' ;
 
@@ -44,6 +44,11 @@ h1 {
 .velkommen {
 
   font-family:'raleway' ;
+  font-size: 70px;
+}
+
+.tekst {
+  line-height: 40px;
 
 }
 
@@ -115,7 +120,7 @@ li img{
 }
 
 .modal{
-  display: none;
+
   position: fixed;
   z-index: 1;
   left: 0;
@@ -136,7 +141,6 @@ li img{
   animation-name:modalopen;
   animation-duration: 1s;
   border-radius: 25px;
-  border: 2px solid #c31414;
   font-family:'raleway' ;
 }
 
