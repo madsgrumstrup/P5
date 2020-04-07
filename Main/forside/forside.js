@@ -4,6 +4,8 @@ var modal = document.getElementById('simpleModal');
 // Get close modalbutton
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
+
+
 // Listen for outside click
 closeBtn.addEventListener('click', closeModal);
 // Listen for close click
