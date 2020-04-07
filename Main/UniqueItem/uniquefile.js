@@ -16,13 +16,6 @@ overlay.addEventListener('click', () => {
   })
 })
 
-closeModalButton.forEach(button => {
-  button.addEventListener('click',() => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
-
 function openModal(modal) {
   if (modal == null) return
   modal.classList.add('aktiv')
