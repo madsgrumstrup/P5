@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../../images/gammelt-papir.png);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #c31414;
+  color: white;
+  height: 200px;
+  width: 100%;
+  font-family:'raleway' ;
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 70px;
+  font-family:'raleway' ;
+
+}
+
+.coop-tekst {
+
+  font-family:'raleway' ;
+
+}
+
+.skattejagt-tekst {
+
+  font-family:'treasuremap' ;
+  font-size: 70px;
+
+}
+
+.velkommen {
+
+  font-family:'raleway' ;
+  font-size: 70px;
+}
+
+.tekst {
+  line-height: 40px;
+
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+   position: fixed;
+   height: 200px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #c31414;
+   color: white;
+   text-align: center;
+   font-family:'raleway' ;   list-style: none;
+   padding-bottom: 5px;
+}
+
+li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+li img{
+  height: auto;
+  width: 100px;
+}
+
+.button{
+  background: #c31414;
+  padding: 1em 2em;
+  color: #fff;
+  border:0;
+  cursor: pointer;
+  height: 100px;
+  width: 200px;
+  font-size: 50px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px;
+}
+
+.button:hover{
+  background: #8c1419;
+}
+
+.slutBtn{
+  text-align: center;
+  top: 50%;
+}
+
+#slutBtn {
+
+}
+
+.modal{
+
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  font-family:'raleway' ;
+}
+
+.modal-content{
+  background-color: #ffffff;
+  margin: 50% auto;
+  width: 600px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name:modalopen;
+  animation-duration: 1s;
+  border-radius: 25px;
+  font-family:'raleway' ;
+}
+
+
+
+.modal-body{
+  padding: 30px 70px;
+  text-align: center;
+  font-size: 40px;
+  color: #c31414;
+  font-family:'raleway' ;
+}
+
+.modal-footer{
+  text-align: center;
+}
+
+.closeBtn{
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+
+
+.pirat{
+  padding: 20px;
+}
+
+p {
+  padding: 15px;
+}
+
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}

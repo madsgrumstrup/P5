@@ -3,12 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="Language" content="dk" />
-<title>Coop Skattejagt</title>
+<title>Enkel Vare</title>
 <link rel="stylesheet" href="uniquefile.css">
 </head>
 <body>
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <div class="title">Hint</div>
+  </div>
+  <div class="modal-body">
+    Du skal kigge køleskabene for at finde skatten!
+    <img src="../../images/mælk.jpg" alt="Mælk">
+    <div class="knapper">
 
-<div class="header" id="myHeader">
+
+    </div>
+  </div>
+</div>
+<div id="overlay"></div>
+<div class="header" id="header">
   <div class="tilbageknap">
    <img src="../../images/tilbageikon.png" alt="tilbage ikon">
   </div>
@@ -21,7 +34,7 @@
     <div class="læsmere">
       Læs Mere
     </div>
-    <div class="hint">
+    <div data-modal-target="#modal" class="hint">
       <img src="../../images/hintikon.png" alt="">
     </div>
     <div class="antalvare">
@@ -40,6 +53,8 @@
          </li>
 
 </div>
+<script type="text/javascript" src="uniquefile.js">
 
+</script>
 </body>
 </html>
