@@ -59,6 +59,51 @@ body {
   width: 100px;
 }
 
+.hest {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background-color: #c31414;
+  border-radius: 20px;
+  z-index: 10;
+  width: 800px;
+  max-width: 80%;
+}
+
+.hest.aktiv {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hest-header {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hest-header .title {
+  font-size: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.hest-body {
+  padding: 30px 40px;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.hest-body img {
+  padding-top: 20px;
+  width: 100%;
+}
+
 #overlay {
   position: fixed;
   transition: 200ms ease-in-out;
