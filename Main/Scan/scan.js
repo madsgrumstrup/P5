@@ -1,12 +1,12 @@
 // Get modal element
 var modal = document.getElementById('simpleModal');
 // Get open modalbutton
-var modalBtn = document.getElementById('slutBtn');
+var modalBtn = document.getElementById('scanBtn');
 // Get close modalbutton
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 // Listen for open click
-slutBtn.addEventListener('click', openModal);
+scanBtn.addEventListener('click', openModal);
 // Listen for close click
 closeBtn.addEventListener('click', closeModal);
 // Listen for outside click
@@ -27,5 +27,16 @@ function outsideClick(e){
   if(e.target == modal){
   modal.style.display = 'none';
   }
+}
 
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
 }

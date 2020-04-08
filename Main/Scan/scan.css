@@ -65,3 +65,108 @@ li img{
   height: auto;
   width: 100px;
 }
+
+.button{
+  background: #c31414;
+  padding: 1em 2em;
+  color: #fff;
+  border:0;
+  cursor: pointer;
+  height: 100px;
+  width: 200px;
+  font-size: 50px;
+  padding: 0px;
+  border-radius: 25px;
+  border: 2px;
+}
+
+.button:hover{
+  background: #8c1419;
+}
+
+.scanBtn{
+  text-align: center;
+  top: 50%;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.modal-content{
+  background-color: white;
+  margin: 50% auto;
+  width: 600px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name:modalopen;
+  animation-duration: 1s;
+  border-radius: 25px;
+  border: 2px solid #c31414;
+}
+
+.modal-header h2,{
+  margin: 0;
+}
+
+.modal-header{
+background: #c31414;
+padding: 20px;
+color: white;
+border-radius: 20px 20px 0px 0px;
+border: 2px solid #c31414;
+margin: 0px;
+text-align: center;
+font-size: 50px;
+}
+
+.modal-body{
+  padding: 30px 70px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.closeBtn{
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: #8c1419;
+  text-decoration: none;
+}
+
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+.scancam{
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #8c1419 solid;
+  display: flex;
+  justify-content: center;
+}
+
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}

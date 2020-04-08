@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+background-image: url("../../images/gammelt-papir.png");
+
+}
+
+.header {
+	position:fixed;
+  display: flex;
+  justify-content: center;
+  background: #c31414;
+  color: white;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+	z-index: 2;
+margin-top: -10px;
+	margin-left: -10px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.bubclass .bubbles {
+	
+	position: relative;
+	top:0;
+	left:0;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	transform: translateZ(0);
+}
+.bubbles li {
+	
+	position: relative;
+	list-style: none;
+	background-color: #9F1618;
+	height: -100px;
+	animation: circle 20s infinite;
+	transition-timing-function: linear;
+	
+}
+
+.bubbles li:nth-child(1) {
+	width: 25em;
+	height: 25em;
+	border-radius: 50%;
+	left:5%;
+}
+
+.bubbles li:nth-child(2) {
+	width: 25em;
+	height: 25em;
+	border-radius: 50%;
+	left:60%;
+	/*delete later*/
+	animation-delay: 2s;
+	animation-duration: 17s;
+}
+
+
+.bubbles li:nth-child(3) {
+	width: 25em;
+	height: 25em;
+	border-radius: 50%;
+	left:1%;
+}
+
+.bubbles li:nth-child(4) {
+	margin-top: -10em;
+	width: 25em;
+	height: 25em;
+	left:60%;
+	border-radius: 50%;
+}
+
+.bubbles li:nth-child(5) {
+	
+	width: 30em;
+	height: 30em;
+	border-radius: 50%;
+	left:10%;
+}
+.bubbles li:nth-child(1) img {
+	margin-left: 9em;
+	margin-top: 1em;
+}
+
+.bubbles li:nth-child(2) img {
+	margin-left: 5.5em;
+	margin-top: 1em;
+}
+.bubbles li:nth-child(3) img {
+	margin-left: 5.5em;
+	margin-top: 1em;
+}
+.bubbles li:nth-child(4) img {
+	margin-left: 9em;
+	margin-top: 1em;
+}
+
+.bubbles li:nth-child(5) img {
+	margin-left: 13em;
+	margin-top: 1em;
+}
+
+
+.bubbles li p {
+	font-family: raleway;
+	color: #FFFFFF;
+	font-size: 3.5em;
+	line-height: .5;
+	margin-top: 20px;
+	
+	text-align: center;
+}
+
+
+.bubbles li:nth-child(5) p {
+	font-family: raleway;
+	color: #FFFFFF;
+	font-size: 5em;
+	line-height: .3;
+	margin-top: 20px;
+	
+	text-align: center;
+}
+
+
+.treasurechest {
+	position: relative;
+	float: right;
+	margin-bottom: 7em;
+}
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+   position: fixed;
+   justify-content: center;
+   height: 100px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #c31414;;
+   color: white;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
+   padding-bottom: 5px;
+}
+
+.footer li {
+   display: flex;
+   align-items: center;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.button{
+  background: #c31414;
+  padding: 1em 2em;
+  color: #fff;
+  border:0;
+}
+
+.button:hover{
+  background: #8c1419;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.modal-content{
+  background-color: #c31414;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn{
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: #8c1419;
+  text-decoration: none;
+  cursor: pointer;
+}

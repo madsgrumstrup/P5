@@ -76,7 +76,6 @@ li img{
   width: 200px;
   font-size: 50px;
   padding: 0px;
-  text-align: center;
   border-radius: 25px;
   border: 2px;
 }
@@ -88,10 +87,6 @@ li img{
 .slutBtn{
   text-align: center;
   top: 50%;
-}
-
-#slutBtn {
-
 }
 
 .modal{
@@ -125,7 +120,7 @@ li img{
 
 .modal-header{
 background: #c31414;
-padding: 30px;
+padding: 20px;
 color: white;
 border-radius: 20px 20px 0px 0px;
 border: 2px solid #c31414;
