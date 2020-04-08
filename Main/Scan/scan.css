@@ -116,7 +116,7 @@ li img{
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name:modalopen;
   animation-duration: 1s;
-  border-radius: 25px;
+  border-radius: 14px;
   border: 2px solid #c31414;
 }
 
@@ -128,7 +128,7 @@ li img{
 background: #c31414;
 padding: 20px;
 color: white;
-border-radius: 20px 20px 0px 0px;
+border-radius: 11px 11px 0px 0px;
 border: 2px solid #c31414;
 margin: 0px;
 text-align: center;
