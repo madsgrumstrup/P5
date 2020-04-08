@@ -5,6 +5,7 @@
 
 body {
   background-image: url(../../images/gammelt-papir.png);
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -17,39 +18,12 @@ body {
   color: white;
   height: 200px;
   width: 100%;
-  font-family:'raleway' ;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-
 }
 
-h2 {
+h1 {
   font-size: 70px;
-  font-family:'raleway' ;
-
-}
-
-.coop-tekst {
-
-  font-family:'raleway' ;
-
-}
-
-.skattejagt-tekst {
-
-  font-family:'treasuremap' ;
-  font-size: 70px;
-
-}
-
-.velkommen {
-
-  font-family:'raleway' ;
-  font-size: 70px;
-}
-
-.tekst {
-  line-height: 40px;
-
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -75,7 +49,8 @@ h2 {
    background-color: #c31414;
    color: white;
    text-align: center;
-   font-family:'raleway' ;   list-style: none;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
    padding-bottom: 5px;
 }
 
@@ -101,7 +76,6 @@ li img{
   width: 200px;
   font-size: 50px;
   padding: 0px;
-  text-align: center;
   border-radius: 25px;
   border: 2px;
 }
@@ -110,17 +84,13 @@ li img{
   background: #8c1419;
 }
 
-.slutBtn{
+.scanBtn{
   text-align: center;
   top: 50%;
 }
 
-#slutBtn {
-
-}
-
 .modal{
-
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -129,33 +99,39 @@ li img{
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #000000;
-  font-family:'raleway' ;
+  color: black;
 }
 
 .modal-content{
-  background-color: #ffffff;
+  background-color: white;
   margin: 50% auto;
   width: 600px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name:modalopen;
   animation-duration: 1s;
   border-radius: 25px;
-  font-family:'raleway' ;
+  border: 2px solid #c31414;
 }
 
+.modal-header h2,{
+  margin: 0;
+}
 
+.modal-header{
+background: #c31414;
+padding: 20px;
+color: white;
+border-radius: 20px 20px 0px 0px;
+border: 2px solid #c31414;
+margin: 0px;
+text-align: center;
+font-size: 50px;
+}
 
 .modal-body{
   padding: 30px 70px;
   text-align: center;
-  font-size: 40px;
-  color: #c31414;
-  font-family:'raleway' ;
-}
-
-.modal-footer{
-  text-align: center;
+  font-size: 30px;
 }
 
 .closeBtn{
@@ -165,17 +141,32 @@ li img{
   font-size: 60px;
 }
 
-
-
-.pirat{
-  padding: 20px;
-}
-
-p {
-  padding: 15px;
+.closeBtn:hover,.closeBtn:focus{
+  color: #8c1419;
+  text-decoration: none;
 }
 
 @keyframes modalopen{
   from{opacity: 0}
   to{opacity: 1}
+}
+
+.scancam{
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #8c1419 solid;
+  display: flex;
+  justify-content: center;
+}
+
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
 }

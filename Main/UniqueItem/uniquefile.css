@@ -9,6 +9,69 @@ body {
   background-position: center; /* vil ikke fylde hele siden*/
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background-color: #c31414;
+  border-radius: 20px;
+  z-index: 10;
+  width: 800px;
+  max-width: 80%;
+}
+
+.modal.aktiv {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.modal-body {
+  padding: 30px 40px;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.modal-body img {
+  padding-top: 20px;
+  width: 100%;
+}
+
+#overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  pointer-events: none;
+}
+
+#overlay.aktiv {
+  pointer-events: all;
+  opacity: 1;
+}
+
 .header {
   display: flex;
   justify-content: space-around;

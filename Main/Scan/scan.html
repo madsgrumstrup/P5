@@ -4,27 +4,49 @@
 <meta charset="utf-8">
 <meta name="Language" content="dk" />
 <title>Coop Skattejagt</title>
-<link rel="stylesheet" href="../index/layout.css">
+<link rel="stylesheet" href="../scan/scan.css">
 </head>
 <body>
 
 <div class="header" id="myHeader">
- <h1>Scan din vare</h1>
+ <h1>(indkøbsliste)</h1>
 </div>
 
 <div class="footer">
-  <li><img class="icon2" src="../images/hjem-ikon.png" alt="hjem-ikon"
-           style="height:70px;">
+  <li><img class="icon2" src="../../images/hjem-ikon.png" alt="hjem-ikon"
          </li>
 
-  <li><img class="icon1" src="../images/scan-ikon.png" alt="scan-ikon"
-           style="height:70px;">
+  <li><img href="scan.html" class="icon1" src="../../images/scan-ikon.png" alt="scan-ikon"
          </li>
 
-  <li><img class="icon2" src="../images/mere-ikon.png" alt="mere-ikon"
-           style="height:27px;">
+  <li><img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon"
          </li>
-
 </div>
 
+<div class="scanBtn">
+<button id="scanBtn" class="button">Scan</button>
+</div>
+
+<div id="simpleModal" class="modal">
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="closeBtn">&times;</span>
+     <h2>Scan din vare</h2>
+  </div>
+  <div class="modal-body">
+    <p>Placer stregkoden på din vare i kameraboksen</p>
+    <p>&nbsp; 
+
+  <div class="scancam">
+    <div id="container">
+    <video autoplay="true" id="videoElement"></video>
+  </div>
+</div>
+
+  </div>
+</div>
+</div>
+
+<script src="scan.js"></script>
 </body>
+</html>
