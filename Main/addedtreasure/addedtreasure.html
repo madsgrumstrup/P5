@@ -5,6 +5,7 @@
 <meta name="Language" content="dk" />
 <title>Coop Skattejagt</title>
 <link rel="stylesheet" href="addedtreasure.css">
+	
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 				<p>2 stk</p>
 				<p>14,5 kr</p></li>
 				<li><img href="milk.html" class="milk" src="../../images/cucum.png" alt="scan-ikon"
-           style="height:150px;">
+           style="height:120px;">
 				<p>2 stk</p>
 				<p>14,5 kr</p></li>
 				<li><img href="milk.html" class="milk" src="../../images/meat.png" alt="scan-ikon"
@@ -45,6 +46,63 @@
            style="height:600px;">
 		</div>
 	</div>
+	
+	<div class="approveTermsContainer">
+<div class="newItems">
+<b>New Items:</b><br/>
+           <select multiple="multiple" id='lstBox1'>
+              <option value="ajax">Ajax</option>
+              <option value="jquery">jQuery</option>
+              <option value="javascript">JavaScript</option>
+              <option value="mootool">MooTools</option>
+              <option value="prototype">Prototype</option>
+              <option value="dojo">Dojo</option>
+        </select>
+</div>
+<div class="transferBtns">
+  <input type='button' id='btnRight' value ='  >  '/>
+  <br/><input type='button' id='btnLeft' value ='  <  '/>
+  <div class="submitContainer">
+  <input type="submit" />
+  </div>
+</div>
+<div class="approvedItems">
+        <b>Items to Approve: </b><br/>
+        <select multiple="multiple" id='lstBox2'>
+        </select>
+	
+	<script>
+	$(document).ready(function() {
+    $('#btnRight').click(function(e) {
+        var selectedOpts = $('#lstBox1 option:selected');
+        if (selectedOpts.length == 0) {
+            alert("Nothing to move.");
+            e.preventDefault();
+        }
+
+        $('#lstBox2').append($(selectedOpts).clone());
+        $(selectedOpts).remove();
+        e.preventDefault();
+    });
+
+    $('#btnLeft').click(function(e) {
+        var selectedOpts = $('#lstBox2 option:selected');
+        if (selectedOpts.length == 0) {
+            alert("Nothing to move.");
+            e.preventDefault();
+        }
+
+        $('#lstBox1').append($(selectedOpts).clone());
+        $(selectedOpts).remove();
+        e.preventDefault();
+    });
+});
+	</script>
+</div>
+</div>
+	
+
+
 
 <div class="footer">
   <li><img class="icon2" src="../../images/hjem-ikon.png" alt="hjem-ikon"
