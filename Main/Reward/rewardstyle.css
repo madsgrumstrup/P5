@@ -5,7 +5,7 @@
 
 body {
   background-image: url(../../images/gammelt-papir.png);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -18,7 +18,7 @@ body {
   color: white;
   height: 200px;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'raleway', sans-serif;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@ h1 {
    background-color: #c31414;
    color: white;
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'raleway', sans-serif;
    list-style: none;
    padding-bottom: 5px;
 }
@@ -67,17 +67,24 @@ li img{
 }
 
 .button{
-  background: #c31414;
-  padding: 1em 2em;
-  color: #fff;
-  border:0;
-  cursor: pointer;
-  height: 100px;
-  width: 200px;
-  font-size: 50px;
-  padding: 0px;
-  border-radius: 25px;
-  border: 2px;
+  background:#c31414;
+	border-radius:11px;
+	border:1px solid #c31414;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'raleway', sans-serif;
+	font-weight: 500;
+	font-size: 60px;
+	padding:10px 46px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  width: 300px;
+}
+
+.button:active {
+	position:relative;
+	 transform: scale(1.01);
 }
 
 .button:hover{
@@ -109,7 +116,7 @@ li img{
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
   animation-name:modalopen;
   animation-duration: 1s;
-  border-radius: 25px;
+  border-radius: 14px;
   border: 2px solid #c31414;
 }
 
@@ -122,7 +129,7 @@ li img{
 background: #c31414;
 padding: 20px;
 color: white;
-border-radius: 20px 20px 0px 0px;
+border-radius: 11px 11px 0px 0px;
 border: 2px solid #c31414;
 margin: 0px;
 text-align: center;

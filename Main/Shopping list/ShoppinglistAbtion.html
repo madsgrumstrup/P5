@@ -5,7 +5,6 @@
     <title>IndkøbsListe Abtion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ShoppinglistAbtion.css">
-    <script src="ShoppinglistAbtion.js"></script>
   </head>
   <body>
       <div class="header" id="myHeader">
@@ -29,7 +28,7 @@
 
 <div class="row">
   <div class="column" style="background-color:#7daddb;">
-    <h2>Mælkeprodukter</h2>
+    <h2>Mejeri</h2>
     <p>Some text..</p>
   </div>
   <div class="column" style="background-color:#ccc;">
@@ -41,7 +40,7 @@
     <p>Some text..</p>
   </div>
     <div class="column" style="background-color:#ccc;">
-    <h2>Kakaomælk</h2>
+    <h2>Mælk</h2>
     <p>Some text..</p>
   </div>
 </div>
@@ -52,7 +51,7 @@
     <p>Some text..</p>
   </div>
   <div class="column" style="background-color:#ccc;">
-    <h2>500g Hakket oksekød</h2>
+    <h2>Kyllingebryst</h2>
     <p>Some text..</p>
   </div>
 </div>
@@ -80,12 +79,13 @@
 var elements = document.getElementsByClassName("column");
 
 // Declare a loop variable
-var i;
-
+var i;   
+    
 // List View
 function listView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.width = "100%";
+      elements[i].style.borderRadius = '0em';
   }
 }
 
@@ -93,6 +93,7 @@ function listView() {
 function gridView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.width = "50%";
+      elements[i].style.borderRadius = '1.5em';
   }
 }
 
