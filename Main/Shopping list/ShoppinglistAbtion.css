@@ -85,3 +85,9 @@ li {
   background-color: #666;
   color: white;
 }
+
+@media only screen and (min-width: 800px){
+    .column {
+        font-size: 10px;
+    }
+}
