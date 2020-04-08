@@ -65,6 +65,7 @@ margin-top: -10px;
 	height: 25em;
 	border-radius: 50%;
 	left:5%;
+	margin-top: 60px;
 }
 
 .bubbles li:nth-child(2) {
@@ -106,7 +107,7 @@ margin-top: -10px;
 }
 
 .bubbles li:nth-child(2) img {
-	margin-left: 5.5em;
+	margin-left: 7em;
 	margin-top: 1em;
 }
 .bubbles li:nth-child(3) img {
@@ -172,6 +173,27 @@ margin-top: -10px;
    padding-bottom: 5px;
 }
 
+
+
+#lstBox1, #lstBox2{
+  height:300px;
+  width:200px;
+}
+
+.approveTermsContainer{
+  display:flex;
+  justify-content:center;
+}
+
+.transferBtns {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.transferBtns{
+  float:left; 
+  align-self:center;
+}
 .footer li {
    display: flex;
    align-items: center;
