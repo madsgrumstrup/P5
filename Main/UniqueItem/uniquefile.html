@@ -32,7 +32,7 @@
       </div>
     </div>
   </div>
-  
+
   <div id="overlay"></div>
   <div class="header" id="header">
     <div class="tilbageknap">
@@ -50,9 +50,12 @@
         <img src="../../images/hintikon.png" alt="hint ikon">
       </div>
       <div class="antalvare">
-        Antal Vare
+        <input type="button" value="-" id="minus" onclick="minus()">
+        <input type="text" value="1" id="antal">
+        <input type="button" value="+" id="plus" onclick="plus()">
       </div>
     </div>
+    <script type="text/javascript" src="uniquefile.js"></script>
     <div class="footer">
       <li><img class="icon2" src="../../images/liste-ikon2.png" alt="hjem-ikon">
          </li>
@@ -61,7 +64,6 @@
          <li><img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon">
         </li>
     </div>
-<script type="text/javascript" src="læsmere.js"></script>
-<script type="text/javascript" src="uniquefile.js"></script>
+
 </body>
 </html>
