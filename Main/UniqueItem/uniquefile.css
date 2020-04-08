@@ -54,6 +54,11 @@ body {
   width: 100%;
 }
 
+.modal .hintpil {
+  height: 100px;
+  width: 100px;
+}
+
 #overlay {
   position: fixed;
   transition: 200ms ease-in-out;
@@ -117,20 +122,25 @@ h1 {
 }
 
 .læsmere {
-  padding: 10px;
-  margin-top: 100px;
-  font-size: 50px;
-  background-color: #c31414;
-  width: 300px;
-  text-align: center;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  border-radius: 20px;
+    background-color: #c31414;
+  	border-radius: 11px;
+  	border: 1px solid #c31414;
+  	display: inline-block;
+  	cursor: pointer;
+  	color: #ffffff;
+  	font-family: raleway;
+  	font-weight: 500;
+  	font-size: 60px;
+  	padding: 10px 46px;
+  	text-decoration: none;
+  	text-shadow: 0px 1px 0px #2f6627;
+    width: 300px;
+    text-align: center;
+    margin: 100px;
 }
 
 .hint {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .hint img {
@@ -139,16 +149,21 @@ h1 {
 }
 
 .antalvare {
-  font-size: 50px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  color: white;
   background-color: #c31414;
-  padding: 10px;
-  margin-top: 100px;
+  border-radius: 11px;
+  border: 1px solid #c31414;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: raleway;
+  font-weight: 500;
+  font-size: 60px;
+  padding: 10px 46px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
   width: 300px;
   text-align: center;
-  border-radius: 20px;
+  margin: 100px;
 }
 
 .footer {
