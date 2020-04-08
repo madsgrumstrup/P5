@@ -1,5 +1,4 @@
 const openModalButton = document.querySelectorAll('[data-modal-target]')
-const closeButton = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 const openHestButton = document.querySelectorAll('[data-hest-target]')
 var antal = 1;
