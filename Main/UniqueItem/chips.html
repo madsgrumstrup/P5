@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Language" content="dk" />
+<title>Enkel Vare</title>
+<link rel="stylesheet" href="uniquefile.css">
+</head>
+<body>
+  <div class="hest" id="hest">
+    <div class="hest-header">
+      <div class="title">Chips</div>
+    </div>
+    <div class="hest-body">
+      Chips er en af de foretrukkede snacks en fredag aften! Chips er selvfølgelig ikke det sundeste i verden men de smager godt til en fredag aften!
+      <img src="../../images/chipsenkeltvare.jpg" alt="Chips">
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Hint</div>
+    </div>
+    <div class="modal-body">
+      Du skal kigge omkring slik og sådavand for at finde skatten!
+      <img src="../../images/slikhylder.jpg" alt="Chipshylder">
+      <div class="knapper">
+        <img class="hintpil" src="../../images/pilvenstreikonfed.png" alt="vil venstre">
+        <img class="hintpil" src="../../images/pilhøjreikonfed.png" alt="vil højre">
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <div class="header" id="header">
+    <div class="tilbageknap">
+      <img src="../../images/tilbageikon.png" alt="tilbage ikon">
+    </div>
+    <h1>Indkøbsliste</h1>
+  </div>
+    <div class="varebillede"> <img src="../../images/chipsenkeltvare.jpg" alt="Kyllingebryst">
+    </div>
+    <div class="tekstsektion">
+      <div data-hest-target="#hest" class="læsmere">
+        Læs Mere
+      </div>
+      <div data-modal-target="#modal" class="hint">
+        <img src="../../images/hintikon.png" alt="hint ikon">
+      </div>
+      <div class="antalvare">
+        <input type="button" value="-" id="minus" onclick="minus()">
+        <input type="text" value="1" id="antal">
+        <input type="button" value="+" id="plus" onclick="plus()">
+      </div>
+    </div>
+    <script type="text/javascript" src="uniquefile.js"></script>
+    <div class="footer">
+      <li><img class="icon2" src="../../images/liste-ikon2.png" alt="hjem-ikon">
+         </li>
+         <li><img href="scan.html" class="icon1" src="../../images/scan-ikon.png" alt="scan-ikon">
+         </li>
+         <li><img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon">
+        </li>
+    </div>
+</body>
+</html>
