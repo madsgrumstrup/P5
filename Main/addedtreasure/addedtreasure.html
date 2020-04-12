@@ -5,10 +5,10 @@
 <meta name="Language" content="dk" />
 <title>Coop Skattejagt</title>
 <link rel="stylesheet" href="addedtreasure.css">
-	
+
 </head>
 <body>
-
+	scroll-behavior: smooth;
 <div class="header" id="myHeader">
  <h1>Dine Skatte</h1>
 </div>
@@ -20,25 +20,24 @@
 			<ul id="bubbles">
 				<li> <a href="#"> <img href="milk.html" class="milk" src="../../images/chips.png" alt="scan-ikon"
            style="height:180px;">
-				<p>2 stk</p>
+			<p id="chipsstk"> stk</p>
 				<p>14,5 kr</p></a></li>
 				<li> <a href="#"> <img href="milk.html" class="milk" src="../../images/cucum.png" alt="scan-ikon"
            style="height:120px;">
-				<p>2 stk</p>
+				<p id="cucumstk"> stk</p>
 				<p>14,5 kr</p></a></li>
 				<li> <a href="#"> <img href="milk.html" class="milk" src="../../images/meat.png" alt="scan-ikon"
            style="height:150px;">
-				<p>2 stk</p>
+				<p id="meatstk"> stk</p>
 				<p>14,5 kr</p></a></li>
 				<li> <a href="#"> <img href="milk.html" class="milk" src="../../images/havre.png" alt="scan-ikon"
            style="height:180px;">
-				<p id ="antal"></p>
-				<p>14,5 kr</p></a></li>
+				<p id="havrestk"> stk</p><p>14,5 kr</p></a></li>
 				<li> <a href="#"><img href="milk.html" class="milk" src="../../images/milkbg.png" alt="scan-ikon"
            style="height:220px;">
-				<p>2 stk</p>
+				<p id="milkstk"> stk</p>
 				<p>14,5 kr</p>  </a></li>
-
+<script src="../UniqueItem/uniquefile.js"></script>
 			</ul>	
 		
 
@@ -49,6 +48,7 @@
 		<img href="scan.html" class="treasurechestimg" src="../../images/treasurechest.png" alt="scan-ikon"
            style="height:600px;">
 		</div>
+		<script src="../JS/treasures.js"></script>
 		<!-- <div class="paybuttom">
 			<a href="#" class="paybut">Betal</a>
 	</div>
@@ -116,15 +116,15 @@
 
 <div class="footer">
   <li><img class="icon2" src="../../images/hjem-ikon.png" alt="hjem-ikon"
-           style="height:70px;">
+           style="height:100px;">
          </li>
 
   <li><img href="scan.html" class="icon1" src="../../images/scan-ikon.png" alt="scan-ikon"
-           style="height:70px;">
+           style="height:100px;">
          </li>
 
   <li><img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon"
-           style="height:27px;">
+           style="height:30px;">
          </li>
 
 </div>
