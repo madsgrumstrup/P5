@@ -5,11 +5,11 @@ var modal = document.getElementById('simpleModal');
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 
-
-// Listen for outside click
-closeBtn.addEventListener('click', closeModal);
 // Listen for close click
 startBtn.addEventListener('click', closeModal);
+
+
+// Listen for outside click
 window.addEventListener('click', outsideClick);
 
 
