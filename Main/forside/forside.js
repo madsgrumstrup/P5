@@ -10,6 +10,7 @@ closeBtn.addEventListener('click', closeModal);
 
 
 // Listen for outside click
+startBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
 
