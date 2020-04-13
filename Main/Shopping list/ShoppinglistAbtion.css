@@ -4,28 +4,29 @@ body {
 }
 
 .header {
+padding: 0px;
+  margin: 0px;
   display: flex;
-  justify-content: center;
+justify-content: space-around;
+	align-items: center;
   background: #c31414;
+	margin-top: -10px;
   color: white;
-  width: 100%;
+  width: 105%;
+	margin-left: -10px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
+.header h1 {
+  font-size: 30px;
+	
 }
 
 .footer {
+	padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: row;
    position: fixed;
@@ -42,7 +43,7 @@ body {
    padding-bottom: 5px;
 }
 
-li {
+.footer li {
    display: flex;
    align-items: center;
    margin-left: 40px;
