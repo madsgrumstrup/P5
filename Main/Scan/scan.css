@@ -96,7 +96,7 @@ li img{
   top: 50%;
 }
 
-.modal{
+.scanModal{
   display: none;
   position: fixed;
   z-index: 1;
@@ -109,7 +109,7 @@ li img{
   color: black;
 }
 
-.modal-content{
+.scan-modal-content{
   background-color: white;
   margin: 50% auto;
   width: 600px;
@@ -125,7 +125,7 @@ li img{
   font-size: 0px;
 }
 
-.modal-header{
+.scan-modal-header{
 background: #c31414;
 padding: 10px;
 color: white;
@@ -136,13 +136,13 @@ text-align: center;
 font-size: 50px;
 }
 
-.modal-body{
+.scan-modal-body{
   padding: 30px 70px;
   text-align: center;
   font-size: 30px;
 }
 
-.closeBtn{
+.scanCloseBtn{
   color: white;
   float: right;
   cursor: pointer;
@@ -151,7 +151,7 @@ font-size: 50px;
 }
 
 
-.closeBtn:hover,.closeBtn:focus{
+.scanCloseBtn:hover,.scanCloseBtn:focus{
   color: #8c1419;
   text-decoration: none;
 }
@@ -166,7 +166,7 @@ font-size: 50px;
   justify-content: center;
 }
 
-#container {
+#scanContainer {
 	margin: 0px auto;
 	width: 500px;
 	height: 375px;

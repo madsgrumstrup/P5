@@ -1,9 +1,9 @@
 // Get modal element
-var modal = document.getElementById('simpleModal');
+var modal = document.getElementById('scanSimpleModal');
 // Get open modalbutton
 var modalBtn = document.getElementById('scanBtn');
 // Get close modalbutton
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
+var closeBtn = document.getElementsByClassName('scanCloseBtn')[0];
 
 // Listen for open click
 scanBtn.addEventListener('click', openModal);
