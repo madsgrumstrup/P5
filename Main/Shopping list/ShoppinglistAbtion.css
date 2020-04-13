@@ -67,6 +67,8 @@ li {
     margin-right: auto;
 }
 
+
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -122,6 +124,7 @@ li {
 	position: relative;
 	float: right;
 	margin-bottom: 7em;
+    z-index: -1;
 }
 
 .button {
