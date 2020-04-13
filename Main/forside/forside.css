@@ -9,17 +9,27 @@ body {
   line-height: 1.6;
 }
 
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: #c31414;
-  color: white;
   height: 200px;
+  color: white;
   width: 100%;
-  font-family:'raleway' ;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+	
+}
 
+.tilbageknap img {
+  height: 70px;
+}
+
+.header h1 {
+  font-size: 70px;
+  margin-right: 200px;
 }
 
 h2 {
@@ -64,32 +74,37 @@ h2 {
   padding-top: 102px;
 }
 
+
 .footer {
+	z-index:2;
   display: flex;
   flex-direction: row;
    position: fixed;
+   justify-content: center;
    height: 200px;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #c31414;
+   background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family:'raleway' ;   list-style: none;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
    padding-bottom: 5px;
 }
 
-li {
+.footer li {
    display: flex;
    align-items: center;
    justify-content: center;
    width: 100%;
 }
 
-li img{
+.footer li img {
   height: auto;
   width: 100px;
 }
+
 
 .button{
   background-color:#c31414;
