@@ -17,6 +17,7 @@ background-image: url("../../images/gammelt-papir.png");
   background: #c31414;
   color: white;
   width: 100%;
+	font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 	z-index: 2;
@@ -37,7 +38,7 @@ margin-top: -10px;
 }
 
 
-.bubclass .bubbles {
+.bubclass #bubbles {
 	
 	position: relative;
 	top:0;
@@ -47,85 +48,96 @@ margin-top: -10px;
 	display: flex;
 	flex-direction:column;
 	flex-wrap: nowrap;
-	transform: translateZ(0);
+	
 }
-.bubbles li {
+#bubbles li {
 	
 	position: relative;
 	list-style: none;
 	background-color: #9F1618;
 	height: -100px;
-	animation: circle 20s infinite;
-	transition-timing-function: linear;
+	opacity: 0;
+	
+}
+#bubbles li a {
+	
+	text-decoration: none;
 	
 }
 
-.bubbles li:nth-child(1) {
+
+#bubbles li:nth-child(1) {
 	width: 25em;
 	height: 25em;
 	border-radius: 50%;
 	left:5%;
-	margin-top: 60px;
+	margin-top: 130px;
+	animation: bubleappear 2s 4s forwards , bublemove5 1.5s 4s; 
 }
 
-.bubbles li:nth-child(2) {
+#bubbles li:nth-child(2) {
 	width: 25em;
 	height: 25em;
 	border-radius: 50%;
 	left:60%;
-	/*delete later*/
-	animation-delay: 2s;
-	animation-duration: 17s;
+	animation: bubleappear 2s 3.5s forwards , bublemove4 1.5s 3.5s; 
 }
 
 
-.bubbles li:nth-child(3) {
+#bubbles li:nth-child(3) {
 	width: 25em;
 	height: 25em;
 	border-radius: 50%;
 	left:1%;
+	animation: bubleappear 2s 3s forwards , bublemove3 1.5s 3s; 
 }
 
-.bubbles li:nth-child(4) {
+#bubbles li:nth-child(4) {
 	margin-top: -10em;
 	width: 25em;
 	height: 25em;
 	left:60%;
 	border-radius: 50%;
+	animation: bubleappear 2s 2.5s forwards , bublemove2 1.5s 2.5s; 
 }
 
-.bubbles li:nth-child(5) {
+#bubbles li:nth-child(5) {
 	
 	width: 30em;
 	height: 30em;
 	border-radius: 50%;
 	left:10%;
+	z-index:1;
+	animation: bubleappear 2s 2s forwards,  bublemove 1.5s 2s; 
+	
+		
 }
-.bubbles li:nth-child(1) img {
+#bubbles li:nth-child(1) img {
 	margin-left: 9em;
 	margin-top: 1em;
 }
 
-.bubbles li:nth-child(2) img {
+#bubbles li:nth-child(2) img {
 	margin-left: 7em;
 	margin-top: 1em;
 }
-.bubbles li:nth-child(3) img {
+#bubbles li:nth-child(3) img {
 	margin-left: 5.5em;
 	margin-top: 1em;
 }
-.bubbles li:nth-child(4) img {
+#bubbles li:nth-child(4) img {
 	margin-left: 9em;
 	margin-top: 1em;
 }
 
-.bubbles li:nth-child(5) img {
+#bubbles li:nth-child(5) img {
 	margin-left: 13em;
 	margin-top: 1em;
+	
 }
 
 
-.bubbles li p {
+#bubbles li p {
 	font-family: raleway;
 	color: #FFFFFF;
 	font-size: 3.5em;
@@ -150,17 +162,121 @@ margin-top: -10px;
 .treasurechest {
 	position: relative;
 	float: right;
+	top: -800px;
+	left: -200px;
 	margin-bottom: 7em;
+	z-index: -1;
+	
+}
+.treasurechest a {
+	position: relative;
+	float: left;
+	top: 1000px;
+	left: 150px;
+	margin-bottom: 7em;
+	z-index: -1;
+	
+}
+.treasurechest img {
+	animation: shake 1s ease, treasmove 3s .9s ease forwards;
+}
+
+.recipbut {
+	box-shadow:inset -1px -1px 0px -50px #cf866c;
+	background:linear-gradient(to bottom, #9F1618 5%, #9F1618 100%);
+	background-color: #9F1618;
+	border-radius:27px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:raleway;
+	font-size:40px;
+	font-weight: 700;
+	padding:80px 60px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+	opacity: 0;
+	animation: bubleappear 4s 2.5s forwards;
+}
+
+
+/* Animation of treasurechesat */
+
+
+
+@keyframes shake{
+	0% {transform: rotate(0deg)}	
+	10% {transform: rotate(10deg)}
+	20% {transform: rotate(-10deg)}
+	30% {transform: rotate(10deg)}
+	40% {transform: rotate(-10deg)}
+	50% {transform: rotate(10deg)}
+	60% {transform: rotate(-10deg)}
+	70% {transform: rotate(10deg)}
+	80% {transform: rotate(-10deg)}
+	90% {transform: rotate(10deg)}
+	100% {transform: rotate(0deg)}
+}
+@keyframes bubleappear {
+	0% {opacity: 0;
+	
+	}
+
+	100% {opacity: 1;
+	
+	}
+}
+@keyframes bublescale{
+	from {transform: scale(0.2);}
+
+	to {transform:scale(1);}
+}
+@keyframes bublemove {
+	from {transform: translate(100px, 200px)}
+	to {transform: translate(0px,0px)}
+}
+
+@keyframes bublemove2 {
+	from {transform: translate(-200px, 350px)}
+	to {transform: translate(0px,0px)}
+}
+@keyframes bublemove3 {
+	from {transform: translate(350px, 250px)}
+	to {transform: translate(0px,0px)}
+}
+@keyframes bublemove4 {
+	from {transform: translate(-250px, 300px)}
+	to {transform: translate(0px,0px)}
+}
+@keyframes bublemove5 {
+	from {transform: translate(350px, 250px)}
+	to {transform: translate(0px,0px)}
 }
 
 
 
 
+
+
+
+
+
+
+
+@keyframes treasmove {
+	from {transform: translate(0px, 0px)}
+	to {transform: translate(200px,800px)}
+}
+/* Animation of bubbles from {transform: translateY(0px) , translateX(0px)}
+	to {transform: translateY(500px) , translateX(500px)}
+}*/
+
 .footer {
+	z-index:2;
   display: flex;
   flex-direction: row;
    position: fixed;
-   justify-content: center;
+   justify-content: space-around;
    height: 100px;
    left: 0;
    bottom: 0;
