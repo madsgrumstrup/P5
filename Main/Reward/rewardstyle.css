@@ -66,7 +66,7 @@ li img{
   width: 100px;
 }
 
-.button{
+.rewardButton{
   background:#c31414;
 	border-radius:11px;
 	border:1px solid #c31414;
@@ -83,12 +83,12 @@ li img{
   margin: 40px;
 }
 
-.button:active {
+.rewardButton:active {
 	position:relative;
 	 transform: scale(1.01);
 }
 
-.button:hover{
+.rewardButton:hover{
   background: #8c1419;
 }
 
