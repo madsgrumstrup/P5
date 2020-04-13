@@ -5,7 +5,6 @@ var antal = 1;
 var antalEl = document.getElementById('antal');
 
 
-
 openModalButton.forEach(button => {
   button.addEventListener('click',() => {
     const modal = document.querySelector(button.dataset.modalTarget)
@@ -70,3 +69,20 @@ function minus() {
   antal--;
   antalEl.value = antal;
 }
+
+
+
+var chipsantal = 1;
+var cucumantal = 1;
+var meatantal = 1;
+var havreantal = 1;
+var milkantal = 1;
+
+
+
+//get number of item on added treasure
+document.getElementById('chipsstk').innerHTML = chipsantal + " " + "stk" ;
+document.getElementById('cucumstk').innerHTML = cucumantal + " " + "stk" ;
+document.getElementById('meatstk').innerHTML = meatantal + " " + "stk" ;
+document.getElementById('havrestk').innerHTML = havreantal + " " + "stk" ;
+document.getElementById('milkstk').innerHTML = milkantal + " " + "stk" ;
