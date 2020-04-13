@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
 body {
  
@@ -11,20 +15,26 @@ background-image: url("../../images/gammelt-papir.png");
 }
 
 .header {
-	position:fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background: #c31414;
+  height: 200px;
   color: white;
   width: 100%;
-	font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-	z-index: 2;
-margin-top: -40px;
-	margin-left: -10px;
+	
 }
 
+.tilbageknap img {
+  height: 70px;
+}
+
+.header h1 {
+  font-size: 70px;
+  margin-right: 200px;
+}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -265,19 +275,21 @@ margin-top: -40px;
 
 @keyframes treasmove {
 	from {transform: translate(0px, 0px)}
-	to {transform: translate(200px,800px)}
+	to {transform: translate(200px,700px)}
 }
 /* Animation of bubbles from {transform: translateY(0px) , translateX(0px)}
 	to {transform: translateY(500px) , translateX(500px)}
 }*/
+
+
 
 .footer {
 	z-index:2;
   display: flex;
   flex-direction: row;
    position: fixed;
-   justify-content: space-around;
-   height: 100px;
+   justify-content: center;
+   height: 200px;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -287,6 +299,18 @@ margin-top: -40px;
    font-family: 'Open Sans', sans-serif;
    list-style: none;
    padding-bottom: 5px;
+}
+
+.footer li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.footer li img {
+  height: auto;
+  width: 100px;
 }
 
 
