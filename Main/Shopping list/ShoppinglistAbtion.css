@@ -1,6 +1,6 @@
 /*Main layout css*/
 body {
-  background-image: url(../images/gammelt-papir.png);
+  background-image: url(../../images/gammelt-papir.png);
 }
 
 .header {
@@ -74,6 +74,32 @@ li {
   clear: both;
 }
 
+.plus {
+  display:inline-block;
+  width:50px;
+  height:50px;
+  
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    #000;
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+
+.alt {
+  background:
+    linear-gradient(#000,#000),
+    linear-gradient(#000,#000);
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+.radius {
+  border-radius:50%;
+}
+
 /* Style the buttons */
 .btn {
   border: none;
@@ -92,8 +118,21 @@ li {
   color: white;
 }
 
-@media only screen and (min-width: 800px){
-    .column {
-        font-size: 10px;
-    }
+.treasurechest {
+	position: relative;
+	float: right;
+	margin-bottom: 7em;
+}
+
+.button {
+  background-color: #c31414;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
