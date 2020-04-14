@@ -200,11 +200,11 @@ body {
 }
 
 .hint {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .hint img {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -215,7 +215,7 @@ body {
   font-family: "Raleway SemiBold";
   width: 405px;
   text-align: center;
-  margin: 100px;
+  margin: 50px;
 }
 
 /* agurk page antal css */
