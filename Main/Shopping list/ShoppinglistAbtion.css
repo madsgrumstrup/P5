@@ -1,20 +1,27 @@
 /*Main layout css*/
+@font-face {
+	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	font-family: "Raleway SemiBold";
+}
 body {
-  background-image: url(../../images/gammelt-papir.png);
+	 font-family: "Raleway SemiBold";
+	background-image: url(../../images/gammelt-papir.png);
+	
 }
 
 .header {
 padding: 0px;
   margin: 0px;
   display: flex;
-justify-content: space-around;
+	flex-direction: column;
+
+ line-height: 0;
 	align-items: center;
   background: #c31414;
 	margin-top: -10px;
   color: white;
   width: 105%;
 	margin-left: -10px;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
 
 }
@@ -22,6 +29,10 @@ justify-content: space-around;
 .header h1 {
   font-size: 30px;
 	
+}
+.header p {
+	 opacity: .9;
+	font-size: .3;
 }
 
 .footer {
@@ -38,7 +49,6 @@ justify-content: space-around;
    background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
    list-style: none;
    padding-bottom: 5px;
 }
@@ -60,12 +70,16 @@ justify-content: space-around;
   float: left;
   width: 50%;
   padding: 10px;
+font-size: .97em;
+	background-size: 170px 120px;
+	
 }
 
 .column img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+	
 }
 
 
@@ -75,19 +89,21 @@ justify-content: space-around;
   content: "";
   display: table;
   clear: both;
+	
 }
 
 .plus {
   display:inline-block;
   width:50px;
   height:50px;
-
+margin-left: 50px;
   
   background:
     linear-gradient(#fff,#fff),
     linear-gradient(#fff,#fff),
     #c31414;
   background-position:center;
+	
   background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
   background-repeat:no-repeat;
 }
@@ -107,18 +123,22 @@ justify-content: space-around;
 /* Style the buttons */
 .btn {
   border: none;
+
+	border-radius: 10px;
   outline: none;
   padding: 12px 16px;
-  background-color: #ffffff;
+
+  background-color: #DB6B6D;
   cursor: pointer;
+	
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #CD3538;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #CD3538;
   color: white;
 }
 
@@ -131,9 +151,10 @@ justify-content: space-around;
 
 .button {
   background-color: #c31414;
+	border-radius:28px;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 20px 38px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

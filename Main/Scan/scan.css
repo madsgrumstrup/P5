@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+@font-face {
+	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	font-family: "Raleway SemiBold";
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -5,66 +12,69 @@
 
 body {
   background-image: url(../../images/gammelt-papir.png);
-  font-family: 'raleway', sans-serif;
+  font-family: "Raleway SemiBold";
   font-size: 17px;
   line-height: 1.6;
 }
 
+
+
 .header {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: #c31414;
-  color: white;
   height: 200px;
+  color: white;
   width: 100%;
-  font-family: 'raleway', sans-serif;
+  font-family: "Raleway SemiBold";
   text-align: center;
+
+
 }
 
-h1 {
+.tilbageknap img {
+  height: 70px;
+}
+
+.header h1 {
   font-size: 70px;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
+	margin-top: -40px;
+  margin-right: 30%;
+	line-height: 70px;;
 }
 
 .footer {
+	z-index:2;
   display: flex;
   flex-direction: row;
    position: fixed;
+   justify-content: center;
    height: 200px;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #c31414;
+   background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family: 'raleway', sans-serif;
+   font-family: "Raleway SemiBold";
    list-style: none;
    padding-bottom: 5px;
 }
 
-li {
+.footer li {
    display: flex;
    align-items: center;
    justify-content: center;
    width: 100%;
 }
 
-li img{
+.footer li img {
   height: auto;
   width: 100px;
 }
+
 
 .scanbutton2{
   background:#c31414;
@@ -73,7 +83,7 @@ li img{
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'raleway', sans-serif;
+	font-family: "Raleway SemiBold";
 	font-weight: 500;
 	font-size: 60px;
 	padding:10px 46px;
@@ -97,7 +107,7 @@ li img{
 }
 
 .scanModal{
-  display: none;
+  
   position: fixed;
   z-index: 1;
   left: 0;

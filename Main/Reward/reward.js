@@ -1,7 +1,7 @@
 // Get modal element
 var modal = document.getElementById('rewardSimpleModal');
 // Get open modalbutton
-var modalBtn = document.getElementById('rewardSlutBtn');
+var modalBtn = document.getElementById('paybut');
 // Get close modalbutton
 var closeBtn = document.getElementsByClassName('rewardCloseBtn')[0];
 

@@ -1,13 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	font-family: "Raleway SemiBold";
+}
+
 * {
   padding: 0px;
   margin: 0px;
 }
 
 body {
+	font-family: "Raleway SemiBold";
  
-  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 1.6;
 background-image: url("../../images/gammelt-papir.png");
@@ -15,6 +20,7 @@ background-image: url("../../images/gammelt-papir.png");
 }
 
 .header {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -22,7 +28,7 @@ background-image: url("../../images/gammelt-papir.png");
   height: 200px;
   color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   text-align: center;
 	
 }
@@ -33,7 +39,9 @@ background-image: url("../../images/gammelt-papir.png");
 
 .header h1 {
   font-size: 70px;
+	margin-top: -40px;
   margin-right: 200px;
+	line-height: 70px;;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -46,6 +54,116 @@ background-image: url("../../images/gammelt-papir.png");
 .sticky + .content {
   padding-top: 102px;
 }
+
+
+
+
+
+
+
+
+
+
+.rewardModal{
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.reward-content{
+  background-color: white;
+  margin: 50% auto;
+  width: 600px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  animation-name:modalopen;
+  animation-duration: 1s;
+  border-radius: 14px;
+  border: 2px solid #c31414;
+}
+
+.blank{
+  font-size: 0px;
+}
+
+.reward-header{
+background: #c31414;
+padding: 10px;
+color: white;
+border-radius: 11px 11px 0px 0px;
+border: 2px solid #c31414;
+margin: 0px;
+text-align: center;
+font-size: 50px;
+}
+
+.reward-modal-body{
+  padding: 30px 70px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.reward-modal-footer{
+  text-align: center;
+}
+
+.rewardCloseBtn{
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 80px;
+  line-height: 20px;
+}
+
+.rewardCloseBtn:hover,.rewardCloseBtn:focus{
+  color: #8c1419;
+  text-decoration: none;
+}
+.rewardButton {
+box-shadow:inset -1px -1px 0px -50px #cf866c;
+	background:linear-gradient(to bottom, #9F1618 5%, #9F1618 100%);
+	background-color: #9F1618;
+	border-radius:27px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+margin-bottom: 80px;
+	font-size:40px;
+	font-weight: 700;
+	padding:40px 120px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+
+.pirat{
+  padding: 40px;
+}
+
+p {
+  padding: 15px;
+}
+
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .bubclass #bubbles {
@@ -148,7 +266,7 @@ background-image: url("../../images/gammelt-papir.png");
 
 
 #bubbles li p {
-	font-family: raleway;
+	
 	color: #FFFFFF;
 	font-size: 3.5em;
 	line-height: .5;
@@ -159,7 +277,7 @@ background-image: url("../../images/gammelt-papir.png");
 
 
 .bubbles li:nth-child(5) p {
-	font-family: raleway;
+
 	color: #FFFFFF;
 	font-size: 5em;
 	line-height: .3;
@@ -191,7 +309,7 @@ background-image: url("../../images/gammelt-papir.png");
 	animation: shake 1s ease, treasmove 3s .9s ease forwards;
 }
 
-.recipbut {
+#paybut {
 	box-shadow:inset -1px -1px 0px -50px #cf866c;
 	background:linear-gradient(to bottom, #9F1618 5%, #9F1618 100%);
 	background-color: #9F1618;
@@ -199,7 +317,7 @@ background-image: url("../../images/gammelt-papir.png");
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:raleway;
+
 	font-size:40px;
 	font-weight: 700;
 	padding:80px 60px;
@@ -208,7 +326,6 @@ background-image: url("../../images/gammelt-papir.png");
 	opacity: 0;
 	animation: bubleappear 4s 2.5s forwards;
 }
-
 
 /* Animation of treasurechesat */
 
@@ -283,6 +400,7 @@ background-image: url("../../images/gammelt-papir.png");
 
 
 
+
 .footer {
 	z-index:2;
   display: flex;
@@ -296,7 +414,7 @@ background-image: url("../../images/gammelt-papir.png");
    background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
+
    list-style: none;
    padding-bottom: 5px;
 }

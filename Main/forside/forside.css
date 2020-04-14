@@ -1,3 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	font-family: "Raleway SemiBold";
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -7,10 +13,14 @@ body {
   background-image: url(../../images/gammelt-papir.png);
   font-size: 17px;
   line-height: 1.6;
+	font-family: "Raleway SemiBold";
 }
 
 
+
+
 .header {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,9 +28,10 @@ body {
   height: 200px;
   color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   text-align: center;
-	
+
+
 }
 
 .tilbageknap img {
@@ -29,18 +40,19 @@ body {
 
 .header h1 {
   font-size: 70px;
+	margin-top: -40px;
   margin-right: 200px;
+	line-height: 70px;;
 }
-
 h2 {
   font-size: 70px;
-  font-family:'raleway' ;
+  font-family: "Raleway SemiBold";
 
 }
 
 .coop-tekst {
 
-  font-family:'raleway' ;
+font-family: "Raleway SemiBold";
 
 }
 
@@ -53,7 +65,7 @@ h2 {
 
 .velkommen {
 
-  font-family:'raleway' ;
+font-family: "Raleway SemiBold";
   font-size: 70px;
 }
 
@@ -88,7 +100,7 @@ h2 {
    background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
    list-style: none;
    padding-bottom: 5px;
 }
@@ -113,7 +125,7 @@ h2 {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'raleway', sans-serif;
+	font-family: "Raleway SemiBold";
 	font-weight: 500;
 	font-size: 60px;
 	padding:10px 46px;
@@ -151,7 +163,7 @@ h2 {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   color: #000000;
-  font-family:'raleway' ;
+ font-family: "Raleway SemiBold";
 }
 
 .modal-content{
@@ -162,7 +174,7 @@ h2 {
   animation-name:modalopen;
   animation-duration: 1s;
   border-radius: 25px;
-  font-family:'raleway' ;
+  font-family: "Raleway SemiBold";
 }
 
 
@@ -172,7 +184,7 @@ h2 {
   text-align: center;
   font-size: 40px;
   color: #c31414;
-  font-family:'raleway' ;
+font-family: "Raleway SemiBold";
 }
 
 .modal-footer{

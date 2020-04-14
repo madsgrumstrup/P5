@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="Language" content="dk" />
+<meta name="author" content="gruppe20">
+<meta name="keywords" content="COOP, Skattejagt, Handle, Børm, Underholdning, ">
+
+ <script src="https://kit.fontawesome.com/1f805a81df.js" crossorigin="anonymous"></script>
+	
 <title>Enkel Vare</title>
 <link rel="stylesheet" href="uniquefile.css">
 </head>
@@ -34,12 +39,18 @@
   </div>
 
   <div id="overlay"></div>
-  <div class="header" id="header">
+ 
+<div class="header" id="header">
     <div class="tilbageknap">
-      <img src="../../images/tilbageikon.png" alt="tilbage ikon">
+    <a href="http://madsgrumstrup.com/coopapp/Main/Shopping%20list/ShoppinglistAbtion.html">   <img src="../../images/tilbageikon.png" alt="tilbage ikon"> </a>
     </div>
-    <h1>Indkøbsliste</h1>
+	 
+    <h1><span style="font-size:.5em;" >Coop </span><br>Mælk</h1>
   </div>
+
+
+
+
     <div class="varebillede"> <img src="../../images/mælk.jpg" alt="Mælk">
     </div>
     <div class="tekstsektion">
@@ -50,18 +61,22 @@
         <img src="../../images/hintikon.png" alt="hint ikon">
       </div>
       <div class="antalvare">
-        <input type="button" value="-" id="minus" onclick="minus()">
-        <input type="text" value="1" id="antal">
-        <input type="button" value="+" id="plus" onclick="plus()">
+        <input type="button" value="-" id="milkminus" onclick="milkminus()">
+        <input type="text" value="1" id="milkantal">
+        <input type="button" value="+" id="milkplus" onclick="milkplus()">
+		  <script src="../JS/treasures.js"></script>
       </div>
     </div>
     <script type="text/javascript" src="uniquefile.js"></script>
-    <div class="footer">
-      <li><img class="icon2" src="../../images/liste-ikon2.png" alt="hjem-ikon">
-         </li>
-         <li><img href="scan.html" class="icon1" src="../../images/scan-ikon.png" alt="scan-ikon">
-         </li>
-         <li><img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon">
+    
+
+
+<div class="footer">
+      <li><a href="http://madsgrumstrup.com/coopapp/Main/Shopping%20list/ShoppinglistAbtion.html"><img class="icon2" src="../../images/liste-ikon2.png" alt="hjem-ikon">
+         </a></li>
+         <li><a href="http://madsgrumstrup.com/coopapp/Main/Scan/scan.html"><img href="scan.html" class="icon1" src="../../images/scan-ikon.png" alt="scan-ikon">
+         </a></li>
+         <li> <img class="icon3" src="../../images/mere-ikon.png" alt="mere-ikon">
         </li>
     </div>
 

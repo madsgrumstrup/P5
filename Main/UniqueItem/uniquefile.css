@@ -1,3 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	font-family: "Raleway SemiBold";
+}
+
+
+
+
 * {
   padding: 0px;
   margin: 0px;
@@ -35,7 +45,7 @@ body {
 
 .modal-header .title {
   font-size: 100px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   font-weight: bold;
   color: white;
 }
@@ -43,7 +53,7 @@ body {
 .modal-body {
   padding: 30px 40px;
   font-size: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   font-weight: bold;
   color: white;
   text-align: center;
@@ -85,7 +95,7 @@ body {
 
 .hest-header .title {
   font-size: 80px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   font-weight: bold;
   color: white;
 }
@@ -93,7 +103,7 @@ body {
 .hest-body {
   padding: 30px 40px;
   font-size: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   font-weight: bold;
   color: white;
   text-align: center;
@@ -123,6 +133,7 @@ body {
 }
 
 .header {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -130,18 +141,22 @@ body {
   height: 200px;
   color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway SemiBold";
   text-align: center;
+	
 }
 
 .tilbageknap img {
   height: 70px;
 }
 
-h1 {
+.header h1 {
   font-size: 70px;
-  margin-right: 200px;
+	margin-top: -40px;
+  margin-right: 25%;
+	line-height: 70px;;
 }
+
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -173,7 +188,7 @@ h1 {
   	display: inline-block;
   	cursor: pointer;
   	color: #ffffff;
-  	font-family: raleway;
+  	font-family: "Raleway SemiBold";
   	font-weight: 500;
   	font-size: 60px;
   	padding: 10px 46px;
@@ -197,13 +212,14 @@ h1 {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: raleway;
+  font-family: "Raleway SemiBold";
   width: 405px;
   text-align: center;
   margin: 100px;
 }
 
-#minus {
+/* agurk page antal css */
+#cucumminus {
   float: left;
   height: 100px;
   width: 100px;
@@ -216,7 +232,7 @@ h1 {
   border-radius: 11px;
 }
 
-#antal {
+#cucumantal {
   height: 100px;
   width: 200px;
   font-size: 60px;
@@ -224,7 +240,7 @@ h1 {
   text-align: center;
 }
 
-#plus {
+#cucumplus {
   float: right;
   height: 100px;
   width: 100px;
@@ -236,6 +252,307 @@ h1 {
   font-size: 60px;
   border-radius: 11px;
 }
+
+/* chips page antal css */
+#chipsminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#chipsantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#chipsplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+/* havre page antal css */
+#havreminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#havreantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#havreplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
+/* hvedetoast page antal css */
+#hvedeminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#hvedeantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#hvedeplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
+
+
+
+
+/* kyllingebryst page antal css */
+#kyllingminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#kyllingantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#kyllingplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
+
+
+/* mælk page antal css */
+#milkminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#milkantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#milkplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
+/* kød page antal css */
+#meatminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#meatantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#meatplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
+/* smør page antal css */
+#butterminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#butterantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#butterplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+/* yogurt page antal css */
+#yogurtminus {
+  float: left;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-right: 0px;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 11px;
+}
+
+#yogurtantal {
+  height: 100px;
+  width: 200px;
+  font-size: 60px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#yogurtplus {
+  float: right;
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: #c31414;
+  border: none;
+  padding-left: 0px;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 11px;
+}
+
+
+
 
 .footer {
   display: flex;
@@ -249,7 +566,7 @@ h1 {
    background-color: #c31414;;
    color: white;
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
+   font-family: "Raleway SemiBold";
    list-style: none;
    padding-bottom: 5px;
 }
