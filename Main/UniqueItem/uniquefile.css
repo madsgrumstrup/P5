@@ -17,6 +17,7 @@
 body {
   background-image: url(../../images/gammelt-papir.png);
   background-position: center; /* vil ikke fylde hele siden*/
+	height: 1000px;
 }
 
 .modal {
@@ -220,7 +221,6 @@ body {
 
 /* agurk page antal css */
 #cucumminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -234,14 +234,13 @@ body {
 
 #cucumantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #cucumplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -255,7 +254,6 @@ body {
 
 /* chips page antal css */
 #chipsminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -269,14 +267,13 @@ body {
 
 #chipsantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #chipsplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -291,7 +288,6 @@ body {
 
 /* havre page antal css */
 #havreminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -305,14 +301,13 @@ body {
 
 #havreantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #havreplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -328,7 +323,6 @@ body {
 
 /* hvedetoast page antal css */
 #hvedeminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -342,14 +336,13 @@ body {
 
 #hvedeantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #hvedeplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -369,7 +362,6 @@ body {
 
 /* kyllingebryst page antal css */
 #kyllingminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -383,14 +375,13 @@ body {
 
 #kyllingantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #kyllingplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -408,7 +399,6 @@ body {
 
 /* mælk page antal css */
 #milkminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -422,14 +412,13 @@ body {
 
 #milkantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #milkplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -445,7 +434,6 @@ body {
 
 /* kød page antal css */
 #meatminus {
-  /* float: left; */
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -466,7 +454,6 @@ body {
 }
 
 #meatplus {
-  /* float: right; */
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -482,7 +469,6 @@ body {
 
 /* smør page antal css */
 #butterminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -496,14 +482,13 @@ body {
 
 #butterantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #butterplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -518,7 +503,6 @@ body {
 
 /* yogurt page antal css */
 #yogurtminus {
-  float: left;
   height: 100px;
   width: 100px;
   font-size: 40px;
@@ -532,14 +516,13 @@ body {
 
 #yogurtantal {
   height: 100px;
-  width: 200px;
+  width: 100px;
   font-size: 60px;
   border-radius: 11px;
   text-align: center;
 }
 
 #yogurtplus {
-  float: right;
   height: 100px;
   width: 100px;
   font-size: 40px;
