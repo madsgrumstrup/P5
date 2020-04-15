@@ -1,6 +1,6 @@
 /*Main layout css*/
 @font-face {
-	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	src:url("../../fonts/Raleway-SemiBold.ttf");
 	font-family: "Raleway SemiBold";
 }
 body {
@@ -31,8 +31,8 @@ padding: 0px;
 	
 }
 .header p {
-	 opacity: .9;
-	font-size: .3;
+	 opacity: 0.9;
+	font-size: 0.3;
 }
 
 .footer {
@@ -79,7 +79,8 @@ font-size: .97em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-	
+    height: 100px;
+    width: auto;
 }
 
 

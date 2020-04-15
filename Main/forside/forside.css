@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	src:url("../../fonts/Raleway-SemiBold.ttf");
 	font-family: "Raleway SemiBold";
 }
 * {
@@ -87,8 +87,9 @@ font-family: "Raleway SemiBold";
 }
 
 
-.footer {
-	z-index:2;
+
+
+.footer .footlist {
   display: flex;
   flex-direction: row;
    position: fixed;
@@ -100,22 +101,29 @@ font-family: "Raleway SemiBold";
    background-color: #c31414;;
    color: white;
    text-align: center;
-  font-family: "Raleway SemiBold";
+   font-family: "Raleway SemiBold";
    list-style: none;
    padding-bottom: 5px;
 }
 
-.footer li {
+li {
    display: flex;
    align-items: center;
    justify-content: center;
    width: 100%;
 }
 
-.footer li img {
+li img {
   height: auto;
   width: 100px;
 }
+
+
+
+
+
+
+
 
 
 .button{
