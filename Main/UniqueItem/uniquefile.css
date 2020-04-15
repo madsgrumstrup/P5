@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-	src:url("../../../../fonter/Font/Raleway-SemiBold.ttf");
+	src:url("../../fonts/Raleway-SemiBold.ttf");
 	font-family: "Raleway SemiBold";
 }
 
@@ -537,7 +537,9 @@ body {
 
 
 
-.footer {
+
+
+.footer .footlist {
   display: flex;
   flex-direction: row;
    position: fixed;
@@ -565,3 +567,14 @@ li img {
   height: auto;
   width: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
