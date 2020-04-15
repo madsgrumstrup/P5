@@ -240,25 +240,25 @@ p {
 		
 }
 #bubbles li:nth-child(1) img {
-	margin-left: 9em;
+	margin-left: 3.5em;
 	margin-top: 1em;
 }
 
 #bubbles li:nth-child(2) img {
-	margin-left: 7em;
+	margin-left: 4em;
 	margin-top: 1em;
 }
 #bubbles li:nth-child(3) img {
-	margin-left: 5.5em;
+	margin-left: 3.5em;
 	margin-top: 1em;
 }
 #bubbles li:nth-child(4) img {
-	margin-left: 9em;
+	margin-left: 3.5em;
 	margin-top: 1em;
 }
 
 #bubbles li:nth-child(5) img {
-	margin-left: 13em;
+	margin-left: 4em;
 	margin-top: 1em;
 	
 }
@@ -403,6 +403,7 @@ p {
 
 .footer .footlist {
   display: flex;
+	  z-index: 3;
   flex-direction: row;
    position: fixed;
    justify-content: center;
