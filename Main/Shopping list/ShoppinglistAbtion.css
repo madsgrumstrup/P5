@@ -79,7 +79,8 @@ font-size: .97em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-	
+    height: 100px;
+    width: auto;
 }
 
 
