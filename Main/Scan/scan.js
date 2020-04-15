@@ -1,25 +1,19 @@
 // Get modal element
 var modal = document.getElementById('scanSimpleModal');
-// Get open modalbutton
 
 // Get close modalbutton
 var closeBtn = document.getElementsByClassName('scanCloseBtn')[0];
 
-// Listen for open click
 
 // Listen for close click
 closeBtn.addEventListener('click', closeModal);
 // Listen for outside click
 window.addEventListener('click', outsideClick);
 
-// Function to open modal
-
-
 // Function to close modal
 function closeModal(){
   modal.style.display = 'none';
 }
-
 // Function to close modal if outside click
 function outsideClick(e){
   if(e.target == modal){
